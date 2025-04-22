@@ -1,0 +1,17 @@
+activation: GELU
+alpha: 0.1
+data_path: ./dataset
+epochs: 10
+fea_num: 5
+learning_rate: 0.001
+lookback_length: 16
+market_name: NASDAQ
+market_num: 20
+model: StockTransformer
+patience: 10
+relation_name: wikidata
+scale_factor: 3
+steps: 1
+stock_num: 1026
+test_index: 1008
+valid_index: 756

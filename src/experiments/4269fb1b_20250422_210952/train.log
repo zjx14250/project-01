@@ -1,0 +1,121 @@
+===== 最终训练配置 =====
+activation: GELU
+alpha: 0.1
+data_path: ./dataset
+epochs: 10
+fea_num: 5
+learning_rate: 0.001
+lookback_length: 16
+market_name: NASDAQ
+market_num: 20
+model: StockMixer
+patience: 10
+relation_name: wikidata
+scale_factor: 3
+steps: 1
+stock_num: 1026
+test_index: 1008
+valid_index: 756
+
+======================
+epoch1##########################################################
+Train : loss:6.71e-02  =  6.70e-02 + alpha*1.38e-03
+Valid : loss:1.28e-02  =  1.27e-02 + alpha*1.03e-03
+Test: loss:6.32e-02  =  6.31e-02 + alpha*1.46e-03
+Valid performance:
+ mse:1.28e-02, IC:2.72e-02, RIC:2.22e-01, prec@10:5.18e-01, SR:2.07e+00
+Test performance:
+ mse:6.33e-02, IC:7.99e-03, RIC:1.09e-01, prec@10:5.05e-01, SR:7.96e-01 
+
+
+epoch2##########################################################
+Train : loss:3.49e-03  =  3.44e-03 + alpha*4.77e-04
+Valid : loss:3.68e-03  =  3.62e-03 + alpha*5.28e-04
+Test: loss:6.14e-03  =  6.08e-03 + alpha*5.44e-04
+Valid performance:
+ mse:3.65e-03, IC:2.62e-02, RIC:2.64e-01, prec@10:5.32e-01, SR:2.19e+00
+Test performance:
+ mse:6.10e-03, IC:1.57e-02, RIC:2.04e-01, prec@10:5.08e-01, SR:4.49e-01 
+
+
+epoch3##########################################################
+Train : loss:2.38e-03  =  2.34e-03 + alpha*3.83e-04
+Valid : loss:3.34e-03  =  3.29e-03 + alpha*4.88e-04
+Test: loss:5.08e-03  =  5.03e-03 + alpha*4.97e-04
+Valid performance:
+ mse:3.32e-03, IC:2.73e-02, RIC:2.71e-01, prec@10:5.39e-01, SR:2.36e+00
+Test performance:
+ mse:5.05e-03, IC:1.94e-02, RIC:2.45e-01, prec@10:5.10e-01, SR:7.23e-01 
+
+
+epoch4##########################################################
+Train : loss:2.11e-03  =  2.08e-03 + alpha*3.45e-04
+Valid : loss:2.91e-03  =  2.87e-03 + alpha*4.41e-04
+Test: loss:3.58e-03  =  3.53e-03 + alpha*4.31e-04
+Valid performance:
+ mse:2.89e-03, IC:3.17e-02, RIC:3.10e-01, prec@10:5.36e-01, SR:3.52e+00
+Test performance:
+ mse:3.55e-03, IC:2.34e-02, RIC:2.96e-01, prec@10:5.03e-01, SR:1.32e+00 
+
+
+epoch5##########################################################
+Train : loss:1.76e-03  =  1.72e-03 + alpha*3.12e-04
+Valid : loss:2.13e-03  =  2.09e-03 + alpha*3.70e-04
+Test: loss:2.60e-03  =  2.56e-03 + alpha*3.59e-04
+Valid performance:
+ mse:2.11e-03, IC:3.02e-02, RIC:3.16e-01, prec@10:5.44e-01, SR:2.94e+00
+Test performance:
+ mse:2.57e-03, IC:2.45e-02, RIC:3.08e-01, prec@10:5.19e-01, SR:1.19e+00 
+
+
+epoch6##########################################################
+Train : loss:1.96e-03  =  1.93e-03 + alpha*3.11e-04
+Valid : loss:2.15e-03  =  2.12e-03 + alpha*3.66e-04
+Test: loss:2.13e-03  =  2.10e-03 + alpha*2.82e-04
+Valid performance:
+ mse:2.13e-03, IC:2.06e-02, RIC:2.31e-01, prec@10:5.37e-01, SR:2.48e+00
+Test performance:
+ mse:2.10e-03, IC:2.28e-02, RIC:3.02e-01, prec@10:5.22e-01, SR:1.91e+00 
+
+
+epoch7##########################################################
+Train : loss:1.60e-03  =  1.57e-03 + alpha*2.78e-04
+Valid : loss:1.82e-03  =  1.78e-03 + alpha*3.28e-04
+Test: loss:2.20e-03  =  2.17e-03 + alpha*3.00e-04
+Valid performance:
+ mse:1.80e-03, IC:3.44e-02, RIC:3.57e-01, prec@10:5.29e-01, SR:3.41e+00
+Test performance:
+ mse:2.18e-03, IC:2.54e-02, RIC:3.43e-01, prec@10:5.11e-01, SR:2.68e-01 
+
+
+epoch8##########################################################
+Train : loss:1.34e-03  =  1.31e-03 + alpha*2.45e-04
+Valid : loss:2.49e-03  =  2.45e-03 + alpha*3.99e-04
+Test: loss:2.11e-03  =  2.07e-03 + alpha*3.41e-04
+Valid performance:
+ mse:2.47e-03, IC:2.72e-02, RIC:2.99e-01, prec@10:5.21e-01, SR:1.31e+00
+Test performance:
+ mse:2.08e-03, IC:1.74e-02, RIC:2.09e-01, prec@10:5.05e-01, SR:5.83e-01 
+
+
+epoch9##########################################################
+Train : loss:1.47e-03  =  1.45e-03 + alpha*2.49e-04
+Valid : loss:1.55e-03  =  1.52e-03 + alpha*3.01e-04
+Test: loss:1.75e-03  =  1.72e-03 + alpha*2.58e-04
+Valid performance:
+ mse:1.53e-03, IC:3.11e-02, RIC:3.21e-01, prec@10:5.31e-01, SR:2.09e+00
+Test performance:
+ mse:1.73e-03, IC:2.16e-02, RIC:2.68e-01, prec@10:5.14e-01, SR:-5.62e-02 
+
+
+epoch10##########################################################
+Train : loss:1.17e-03  =  1.15e-03 + alpha*2.18e-04
+Valid : loss:1.33e-03  =  1.30e-03 + alpha*2.70e-04
+Test: loss:1.25e-03  =  1.22e-03 + alpha*2.34e-04
+Valid performance:
+ mse:1.31e-03, IC:2.57e-02, RIC:2.59e-01, prec@10:5.35e-01, SR:1.82e+00
+Test performance:
+ mse:1.23e-03, IC:2.10e-02, RIC:2.51e-01, prec@10:5.11e-01, SR:8.43e-03 
+
+
+股票时间序列数据已保存到 experiments/4269fb1b_20250422_210952/stock_series.csv
